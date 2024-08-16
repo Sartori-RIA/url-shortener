@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :shorteners
+      resources :insights, only: :index
     end
   end
+
+  get ':url' => 'home#index'
 end

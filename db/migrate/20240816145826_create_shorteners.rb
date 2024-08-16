@@ -10,5 +10,6 @@ class CreateShorteners < ActiveRecord::Migration[7.1]
       t.timestamps
     end
     add_index :shorteners, :url
+    add_index :shorteners, :short_url
   end
 end

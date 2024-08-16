@@ -13,6 +13,7 @@ gem 'redis', '>= 4.0.1'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 gem "validators"
 gem 'dotenv-rails', '~> 3.1', '>= 3.1.2'
+gem 'faker', '~> 3.4', '>= 3.4.2'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
@@ -22,4 +23,5 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', '~> 3.0', '>= 3.0.4'
   gem 'rubocop-rspec_rails', '~> 2.30'
+  gem 'byebug'
 end

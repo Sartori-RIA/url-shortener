@@ -17,7 +17,7 @@ class Api::V1::ShortenersController < ApplicationController
     @shortener = Shortener.new(shortener_params)
 
     if @shortener.save
-      render json: @shortener, status: :created, location: @shortener
+      render json: @shortener, status: :created
     else
       render json: @shortener.errors, status: :unprocessable_entity
     end
@@ -42,6 +42,6 @@ class Api::V1::ShortenersController < ApplicationController
   end
 
   def shortener_params
-    params.require(:shortener).permit(:url, :visits, :short_url)
+    params.require(:shortener).permit(:url)
   end
 end
