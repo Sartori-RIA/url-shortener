@@ -11,6 +11,7 @@ gem 'rack-cors'
 gem 'rails', '~> 7.1.3', '>= 7.1.3.4'
 gem 'redis', '>= 4.0.1'
 gem 'tzinfo-data', platforms: %i[windows jruby]
+gem "validators"
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
